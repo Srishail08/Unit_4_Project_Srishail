@@ -1,4 +1,4 @@
-# Unit_4_Project_Srishail
+# Unit 4 Java Swing Project Srishail
 
 Project Overview:
 
@@ -15,8 +15,6 @@ Calculates progress as a percentage and automatically saves the username and fin
 Project Goals & Purpose:
 
 The primary purpose of this project was to use Java swing and Object-Oriented Programming to make a fully functional game.
-
 Installation, Setup & Running code:
-
 Just simply download the code, and run no other work needed.
 
