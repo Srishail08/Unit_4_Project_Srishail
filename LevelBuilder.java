@@ -1,5 +1,6 @@
 import java.util.*;
 
+//Class builds the level wtih all spikes
 public class LevelBuilder {
 
     private final int HEIGHT;
