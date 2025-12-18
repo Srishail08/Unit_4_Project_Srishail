@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
+//Class is for menu panel which says Block Jump
 public class MenuPanel extends JPanel{
    private SpringLayout layout = new SpringLayout();
    private JButton play = new JButton("PLAY");
@@ -18,11 +19,11 @@ public class MenuPanel extends JPanel{
     layout.putConstraint(SpringLayout.WEST, title, 60, SpringLayout.WEST, this);
     layout.putConstraint(SpringLayout.NORTH, title, 90, SpringLayout.NORTH, this);
     
-    // PLAY button positioning - CENTERED
+    // PLAY button position
     layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, play, 0, SpringLayout.HORIZONTAL_CENTER, this);
     layout.putConstraint(SpringLayout.NORTH, play, 250, SpringLayout.NORTH, this);
     
-    // LOGOUT button positioning - CENTERED
+    // LOGOUT button position
     layout.putConstraint(SpringLayout.HORIZONTAL_CENTER, backToLogin, 0, SpringLayout.HORIZONTAL_CENTER, this);
     layout.putConstraint(SpringLayout.NORTH, backToLogin, 300, SpringLayout.NORTH, this); 
     
