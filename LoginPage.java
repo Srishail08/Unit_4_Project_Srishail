@@ -1,6 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
 
+//Login page
 public class LoginPage extends JPanel {
     
     private JTextField enterName = new JTextField(10);
