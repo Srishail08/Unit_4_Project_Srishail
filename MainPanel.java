@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.FileNotFoundException;
 
+//Main panel houses all panels, with a card layout to switch between them
 public class MainPanel extends JPanel {
     private CardLayout card = new CardLayout();
 
@@ -16,7 +17,7 @@ public class MainPanel extends JPanel {
     public MainPanel() throws FileNotFoundException {
         this.setLayout(card);
         
-        // Initialize controller *after* creating all components
+        // Make controller after creating all components
         this.controller = new Controller(menu, game, this, login, signup);
         
         this.add(login, "Login");
