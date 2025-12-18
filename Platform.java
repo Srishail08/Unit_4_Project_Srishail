@@ -1,6 +1,6 @@
 import java.awt.*;
 
-
+//Platform
 public class Platform extends GameObject {
     
     // Static Type constants
@@ -12,10 +12,12 @@ public class Platform extends GameObject {
     private int type;
     private Color color;
 
+    //Constructor for platform, and setting type
     public Platform(int x, int y, int w, int h, int type) {
         super(x, y, w, h);
         this.type = type;
         
+        //Make colour based on the type
         switch (type) {
             case TYPE_PLATFORM:
                 this.color = Color.GRAY;
@@ -37,6 +39,7 @@ public class Platform extends GameObject {
     public int getType() {
         return type;
     }
+
 
     @Override
     public void draw(Graphics2D g2, int scrollX) {
