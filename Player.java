@@ -1,5 +1,6 @@
 import java.awt.*;
 
+//Class for the player
 public class Player {
     // Constants
     public static final int SIZE = 30;
@@ -21,6 +22,7 @@ public class Player {
         this.reset(startY);
     }
 
+    // reset
     public void reset(int startY) {
         this.y = startY;
         this.yVel = 0;
@@ -28,13 +30,15 @@ public class Player {
         this.onGround = true;
         this.shipMode = false;
     }
-
+    
+    
+    //update every tick (20 ms using timer)
     public void update(int heightLimit) {
         if (shipMode) {
             y += yVel;
             yVel += 1; // Ship gravity
 
-            // Clamp ship inside screen
+            // Keep ship inside screen
             if (y < 0) y = 0;
             if (y > heightLimit - SIZE - 50) y = heightLimit - SIZE - 50;
         } else {
@@ -73,14 +77,15 @@ public class Player {
         }
     }
 
-    // Platform collision handling
+    // Platform collision
     public void landOnPlatform(int platformY) {
         y = platformY - SIZE;
         yVel = 0;
         rotation = 0;
         onGround = true;
     }
-
+    
+    //method to set on ground which stops it form falling
     public void setOnGround(boolean onGround) {
         this.onGround = onGround;
     }
